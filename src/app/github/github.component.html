@@ -1,0 +1,12 @@
+<h1>GitHub Score</h1>
+<h4>Github Username</h4>
+<form class="myForm" (submit)="onSubmit()">
+  <input type="text" name="username" required [(ngModel)]='username'>
+  <!-- {{name|json}} -->
+  <br><br>
+  <input type="submit" name="submit" value="Calculate my Github Score">
+
+</form>
+
+<!-- <h1 *ngIf='!name'>Does not Exist</h1> -->
+<h1 >Your Score: {{name.followers*name.public_repos}} Great Job!</h1>
